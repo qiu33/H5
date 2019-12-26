@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>响应式商品展示及商品信息比较网格布局界面</title>
+	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
+    <link href="dist/mfb.css" rel="stylesheet">
+    <style type="text/css">
+    body,td,th {
+	font-family: "小单纯体";
+}
+    </style>
+<link rel="stylesheet" href="css/style.css"
+	<!-- Modernizr is used for flexbox fallback -->
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/current.js"></script>
+    </head>
+    <body>
+        <div class="cation-content">
+            <div style="height:50px"></div> <!-- 可以删除 -->
+            <div class="cation-middle">
+                <dl class="cation-list">
+                    <dt>分类</dt>
+                    <dd>
+                        <a href="#" rel="" name="mode" class="all on">全部</a>
+                        <a href="#" rel="服装鞋包" name="mode" class="default">奶茶</a>
+                        <a href="#" rel="家电数码" name="mode" class="default">火锅</a>
+                        <a href="#" rel="英文外贸" name="mode" class="default">烧烤</a>
+                        <a href="#" rel="综合通用" name="mode" class="default">甜品</a>
+                        <a href="#" rel="食品保健" name="mode" class="default">酒水</a>
+                        <a href="#" rel="团购模板" name="mode" class="default">饮料</a>
+                        <a href="#" rel="美容护肤" name="mode" class="default">饼干</a>
+                        <a href="#" rel="珠宝饰品" name="mode" class="default">零食</a>
+                        <a href="#" rel="鲜花礼品" name="mode" class="default">小吃</a>
+                        <a href="#" rel="童装母婴" name="mode" class="default">蛋糕</a>
+                    </dd>
+                </dl>
+                <dl class="cation-list">
+                    <dt>口碑</dt>
+                    <dd>
+                        <a href="#" rel="" name="theme" class="all on">全部</a>
+                        <a href="#" rel="古典雅致" name="theme" class="default">五星级</a>
+                        <a href="#" rel="可爱温馨" name="theme" class="default">四星级</a>
+                        <a href="#" rel="时尚简约" name="theme" class="default">三星级</a>
+                        <a href="#" rel="潮流酷炫" name="theme" class="default">二星级</a>
+                        <a href="#" rel="节日庆典" name="theme" class="default">一星级</a>
+                    </dd>
+                </dl>
+                <dl class="cation-list">
+                    <dt>口味</dt>
+                    <dd>
+                        <a href="#" rel="" name="system" class="all on">全部</a>
+                        <a href="#" rel="多彩" name="system" class="default">甜甜的</a>
+                        <a href="#" rel="橙色" name="system" class="default">酸酸的</a>
+                        <a href="#" rel="粉色" name="system" class="default">辣辣的</a>
+                        <a href="#" rel="红色" name="system" class="default">咸咸的</a>
+                        <a href="#" rel="绿色" name="system" class="default">苦苦的</a>
+                        <a href="#" rel="蓝色" name="system" class="default">冷冷的</a>
+                        <a href="#" rel="黑色" name="system" class="default">热热的</a>
+                    </dd>
+                </dl>
+                <dl class="cation-list">
+                    <dt>价格</dt>
+                    <dd>
+                        <a href="#" rel="" name="price" class="all on">全部</a>
+                        <a href="#" rel="2000 - 6000" name="price" class="default">5 - 10</a>
+                        <a href="#" rel="6000 - 10000" name="price" class="default">10 - 25 </a>
+                        <a href="#" rel="10000 - 14000" name="price" class="default">25 - 45 </a>
+                        <a href="#" rel="18000 - 22000" name="price" class="default">45 - 65</a>
+                        <a href="#" rel="26000 - 30000" name="price" class="default">65 - 100</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            $(function(){
+                new SelectTag({
+                    child : ".default", //所有默认
+                    over : 'on', //当前选中
+                    all : ".all" // 默认全部
+                });
+            })
+        </script>
+
+
+	<ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+      <li class="mfb-component__wrap">
+        <a href="#" class="mfb-component__button--main">
+          <i class="fa fa-bug" aria-hidden="true"></i>
+        </a>
+        <ul class="mfb-component__list">
+          <li>
+            <a href="#" data-mfb-label="View on jq22" class="mfb-component__button--child">
+              <i class="fa fa-bus" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-mfb-label="Follow me on jq22" class="mfb-component__button--child">
+              <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" data-mfb-label="Share on Twitter" class="mfb-component__button--child">
+              <i class="fa fa-bell-o" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+<!-- Compare basket -->
+	<div class="compare-basket">
+		<button class="action action--button action--compare"><i class="fa fa-check"></i><span class="action__text">Compare</span></button>
+	</div>
+    
+    <div id="wrapper">
+	<div class="overlay"></div>
+
+	<!-- Sidebar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+		<ul class="nav sidebar-nav">
+			<li class="sidebar-brand">
+				<a href="#">
+				   导航栏
+				</a>
+			</li>
+			<li>
+				<a href="https://weibo.com/5053261135/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1"><i class="fa fa-weibo" aria-hidden="true"></i> 炒鸡不辣</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i>  Delicious food</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-file-o"></i> Second page</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-cog"></i> Third page</a>
+			</li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Dropdown <span class="caret"></span></a>
+			  <ul class="dropdown-menu" role="menu">
+				<li class="dropdown-header">Dropdown heading</li>
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li><a href="#">Separated link</a></li>
+				<li><a href="#">One more separated link</a></li>
+			  </ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-bank"></i> Page four</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-dropbox"></i> Page 5</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-twitter"></i> Last page</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- /#sidebar-wrapper -->
+
+	<!-- Page Content -->
+	<div id="page-content-wrapper">
+	  <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+		<span class="hamb-top"></span>
+		<span class="hamb-middle"></span>
+		<span class="hamb-bottom"></span>
+	  </button>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+    
+	<!-- Main view -->
+	<div class="view">	
+		<!-- Product grid -->
+		<section class="grid">
+			<!-- Products -->
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/chelunbing.jpg" alt="Product 1" />
+					<h3 class="product__title">车轮饼</h3>
+                    <p>推荐指数：★★★★★</p>
+					<span class="product__year extra highlight">2011</span>
+					<span class="product__region extra highlight">Douro</span>
+					<span class="product__varietal extra highlight">Touriga Nacional</span>
+					<span class="product__alcohol extra highlight">13%</span>
+					<span class="product__price highlight">¥18.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/naichahuoguo.jpg" alt="Product 2" />
+					<h3 class="product__title">奶茶火锅</h3>
+                    <p>推荐指数：★★★☆☆</p>
+					<span class="product__year extra highlight">2013</span>
+					<span class="product__region extra highlight">California</span>
+					<span class="product__varietal extra highlight">Pinot Noir</span>
+					<span class="product__alcohol extra highlight">12%</span>
+					<span class="product__price highlight">¥58.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/dujiaoshou.jpg" alt="Product 3" />
+					<h3 class="product__title">星空下的独角兽</h3>
+                    <p>推荐指数：★★★★☆</p>
+					<span class="product__year extra highlight">2013</span>
+					<span class="product__region extra highlight">Argentina</span>
+					<span class="product__varietal extra highlight">Cabernet Sauvignon </span>
+					<span class="product__alcohol extra highlight">12%</span>
+					<span class="product__price highlight">¥15.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/coffee.jpg" alt="Product 4" />
+					<h3 class="product__title">拿铁咖啡</h3>
+                    <p>推荐指数：★★☆☆☆</p>
+					<span class="product__year extra highlight">2012</span>
+					<span class="product__region extra highlight">Washington</span>
+					<span class="product__varietal extra highlight">Sangiovese</span>
+					<span class="product__alcohol extra highlight">13%</span>
+					<span class="product__price highlight">¥28.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/paofu.jpg" alt="Product 5" />
+					<h3 class="product__title">抹茶泡芙</h3>
+                    <p>推荐指数：★★★★☆</p>
+					<span class="product__year extra highlight">2009</span>
+					<span class="product__region extra highlight">Pauillac, Bordeaux</span>
+					<span class="product__varietal extra highlight">Bordeaux </span>
+					<span class="product__alcohol extra highlight">12%</span>
+					<span class="product__price highlight">¥15.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/mashu.jpg" alt="Product 6" />
+					<h3 class="product__title">麻薯团子</h3>
+                    <p>推荐指数：★★★★☆</p>
+					<span class="product__year extra highlight">2011</span>
+					<span class="product__region extra highlight">California</span>
+					<span class="product__varietal extra highlight">Cabernet Sauvignon</span>
+					<span class="product__alcohol extra highlight">12%</span>
+					<span class="product__price highlight">¥28.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/greenteacake.jpg" alt="Product 7" />
+					<h3 class="product__title">绿叶</h3>
+                    <p>推荐指数：★★★☆☆</p>
+					<span class="product__year extra highlight">2006</span>
+					<span class="product__region extra highlight">McLaren Vale</span>
+					<span class="product__varietal extra highlight">Syrah, Shiraz</span>
+					<span class="product__alcohol extra highlight">12%</span>
+					<span class="product__price highlight">¥28.00</span>
+				    <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/dangao.jpg" alt="Product 8" />
+					<h3 class="product__title">抹茶蛋糕</h3>
+                    <p>推荐指数：★★☆☆☆</p>
+					<span class="product__year extra highlight">2010</span>
+					<span class="product__region extra highlight">Chile</span>
+					<span class="product__varietal extra highlight">Bordeaux</span>
+					<span class="product__alcohol extra highlight">12%</span>
+					<span class="product__price highlight">¥18.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/xia.jpg" alt="Product 9" />
+					<h3 class="product__title">香草凤尾虾</h3>
+                    <p>推荐指数：★★★★★</p>
+					<span class="product__year extra highlight">2009</span>
+					<span class="product__region extra highlight">Argentina</span>
+					<span class="product__varietal extra highlight">Malbec</span>
+					<span class="product__alcohol extra highlight">13%</span>
+					<span class="product__price highlight">¥22.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/shupian.jpg" alt="Product 10" />
+					<h3 class="product__title">美式大薯格</h3>
+                    <p>推荐指数：★★★★★</p>
+					<span class="product__year extra highlight">2011</span>
+					<span class="product__region extra highlight">Tuscany</span>
+					<span class="product__varietal extra highlight">Sangiovese </span>
+					<span class="product__alcohol extra highlight">12%</span>
+					<span class="product__price highlight">¥18.00</span>
+				    <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/ximilu.jpg" alt="Product 11" />
+					<h3 class="product__title">多芒西米捞</h3>
+                    <p>推荐指数：★★☆☆☆</p>
+					<span class="product__year extra highlight">2009</span>
+					<span class="product__region extra highlight">Piedmont</span>
+					<span class="product__varietal extra highlight">Nebbiolo</span>
+					<span class="product__alcohol extra highlight">12%</span>
+					<span class="product__price highlight">¥21.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+			<div class="product">
+				<div class="product__info">
+					<img class="product__image" src="images/mizhilian.jpg" alt="Product 12" />
+					<h3 class="product__title">杨枝甘露</h3>
+                    <p>推荐指数：★★★★☆</p>
+					<span class="product__year extra highlight">2009</span>
+					<span class="product__region extra highlight">St-Julien, Bordeaux</span>
+					<span class="product__varietal extra highlight">Bordeaux</span>
+					<span class="product__alcohol extra highlight">13%</span>
+					<span class="product__price highlight">¥15.00</span>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="action__text">Add to cart</span></button>
+				</div>
+				<label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+			</div>
+		</section>
+	</div><!-- /view -->
+	<!-- product compare wrapper -->
+	<section class="compare">
+		<button class="action action--close"><i class="fa fa-remove"></i><span class="action__text action__text--invisible">Close comparison overlay</span></button>
+	</section>
+	
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+    
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="https://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+	  var trigger = $('.hamburger'),
+		  overlay = $('.overlay'),
+		 isClosed = false;
+
+		trigger.click(function () {
+		  hamburger_cross();      
+		});
+
+		function hamburger_cross() {
+
+		  if (isClosed == true) {          
+			overlay.hide();
+			trigger.removeClass('is-open');
+			trigger.addClass('is-closed');
+			isClosed = false;
+		  } else {   
+			overlay.show();
+			trigger.removeClass('is-closed');
+			trigger.addClass('is-open');
+			isClosed = true;
+		  }
+	  }
+	  
+	  $('[data-toggle="offcanvas"]').click(function () {
+			$('#wrapper').toggleClass('toggled');
+	  });  
+	});
+</script>
+</body>
+</html>
